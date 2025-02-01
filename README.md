@@ -45,3 +45,14 @@ It is recommended you install [Miniconda](https://docs.conda.io/en/latest/minico
 4) Within the conda shell, set up ``pre-commit`` to ensure all commits to adhere to **black** and **PEP8** style conventions.
 
         >> pre-commit install
+
+
+## Usage
+
+1) Activate virtual environment
+
+        >> conda activate ollama-browser-use-venv
+
+2) Run the `main.py`
+
+        >> python ollama_browser_use/main.py

@@ -19,7 +19,7 @@ async def main():
     )
 
     # Initialize the model
-    llm = ChatOllama(model="qwen2.5:latest", num_ctx=16000)
+    llm = ChatOllama(model="qwen2.5:latest", num_ctx=8000)
 
     print("Welcome to Ollama Browser Use!")
     print("Ensure that you have closed all Chrome windows before starting a task.")
