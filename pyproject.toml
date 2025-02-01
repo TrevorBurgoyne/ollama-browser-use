@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ollama_browser_use"
+version = "0.0.0"
+description = "Run an ollama model locally with browser-use."
+authors = [
+    "Trevor Burgoyne <trevorburgoyne@gmail.com>"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11, <3.12"
+
+[tool.poetry.group.dev.dependencies]
+pre_commit = "*"
+
+[tool.setuptools]
+py-modules = ["ollama_browser_use"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
