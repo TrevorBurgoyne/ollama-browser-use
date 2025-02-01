@@ -19,24 +19,25 @@ async def main():
     )
 
     # Initialize the model
-    llm = ChatOllama(model="qwen2.5:latest")
+    llm = ChatOllama(model="qwen2.5:latest", num_ctx=16000)
 
     print("Welcome to Ollama Browser Use!")
     print("Ensure that you have closed all Chrome windows before starting a task.")
     task = input("Enter a task: ")
+    print("\n")
 
     # Create agent with the model
     agent = Agent(
         task=task,
         llm=llm,
         browser=browser,
-        use_vision=False,
+        use_vision=True,
     )
 
     # Run the agent and print the result
     result = await agent.run()
-    await browser.close()
     print(result)
+    await browser.close()
 
 
 if __name__ == "__main__":
