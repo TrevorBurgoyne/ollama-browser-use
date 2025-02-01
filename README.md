@@ -1,7 +1,17 @@
 # ollama-browser-use
 Scripts for running an ollama model locally with browser-use
 
-## Installation 
+## Installation
+
+### Google Chrome
+1) Download [here](https://www.google.com/chrome/)
+
+### Ollama
+1) Download [Ollama](https://ollama.com/)
+2) Run the installer
+3) Open the command prompt and pull the desired model:
+
+        >> ollama pull qwen2.5
 
 ### Poetry
 1) [Set up SSH](https://github.com/TrevorBurgoyne/ollama-browser-use/blob/main/ssh_setup.md)
@@ -12,6 +22,7 @@ Scripts for running an ollama model locally with browser-use
         >> cd ollama-browser-use
         >> pyenv install $(cat .python-version)
         >> poetry install
+        >> playwright install
                 
 4) Set up ``pre-commit`` to ensure all commits to adhere to **black** and **PEP8** style conventions.
 
@@ -29,6 +40,7 @@ It is recommended you install [Miniconda](https://docs.conda.io/en/latest/minico
         >> conda env create -f environment.yaml
         >> conda activate ollama-browser-use-venv
         >> pip install -e .
+        >> playwright install
         
 4) Within the conda shell, set up ``pre-commit`` to ensure all commits to adhere to **black** and **PEP8** style conventions.
 

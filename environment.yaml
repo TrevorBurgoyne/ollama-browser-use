@@ -6,3 +6,5 @@ dependencies:
   - pre_commit
   - pip
   - python=3.11.*
+  - pip:
+    - browser-use

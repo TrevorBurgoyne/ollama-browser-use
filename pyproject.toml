@@ -8,9 +8,11 @@ authors = [
 
 [tool.poetry.dependencies]
 python = ">=3.11, <3.12"
+browser-use = "^0.1.32"
 
 [tool.poetry.group.dev.dependencies]
 pre_commit = "*"
+poetry-plugin-shell = "^1.0.1"
 
 [tool.setuptools]
 py-modules = ["ollama_browser_use"]
